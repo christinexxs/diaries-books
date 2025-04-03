@@ -1,11 +1,12 @@
 /* variavel para as cores  */
+
 :root {
 
     --background-color: rgba(5, 13, 24, 0.555);
 
-    --fundo-menu-lateral: #57362b;
+    --fundo-menu-lateral: #583017;
     --fundo-claro: #a6afb4;
-    --fundo-escuro: #2f3538;
+    --fundo-escuro: #734528;
 
     --borda-clara: #b27059;
     --borda-escura: #037F8C;
@@ -16,7 +17,7 @@
     --texto-hover: #218591;
     --texto-opaco: #81888c;
 
-    --cor-detalhes: #149ddd;
+    --cor-detalhes: #937f6f;
 
     --texto-titulo-claro: #38E0F2;
     --texto-titulo-escuro: #037F8C;
@@ -26,6 +27,7 @@
 }
 
 /* CSS Geral */
+
 body {
     font-family: "Gravitas One", static;
     color: var(--texto-claro);
@@ -33,6 +35,7 @@ body {
 }
 
 /* cabeçalho */
+
 #header {
     position: fixed;
     top: 0;
@@ -97,4 +100,41 @@ body {
 
 a {
     text-decoration: none;
+}
+
+/* Menu Mobile */
+
+.mobile-nav-toggle{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    border: 0;
+    font-size: 26px;
+    transition: all 0.4s;
+    background: var(--cor-detalhes);
+    color: var(--texto-claro);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex ;
+    cursor: pointer;
+}
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active #header {
+    left: 0;
+}
+/* Ajuste para o Corpo do Conteúdo */
+
+/* menu responsivo */
+@media(max-width: 1199px){
+    #header{
+        left: -300px;
+    }
+    
 }
