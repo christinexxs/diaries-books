@@ -48,7 +48,10 @@
 
       new Typed('.typed', {
           strings: typed_strings,
-
+          loop: true,
+          typeSpeed: 50, /* velocidade digitação */
+          backSpeed: 40, /* velocidade em apagar */
+          backDelay: 500, /* tempo de espera */
       });
 
   }
