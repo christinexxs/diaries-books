@@ -4,18 +4,18 @@
 
     --background-color: rgba(5, 13, 24, 0.555);
 
-    --fundo-menu-lateral: #583017;
+    --fundo-menu-lateral: #231811;
     --fundo-claro: #a6afb4;
-    --fundo-escuro: #734528;
+    --fundo-escuro: #2f2015;
 
-    --borda-clara: #b27059;
+    --borda-clara: #2f211c;
     --borda-escura: #037F8C;
 
     --texto-escuro: #161616;
     --texto-claro: #c8d4db;
     --texto-branco: #ecf8ff;
     --texto-hover: #218591;
-    --texto-opaco: #81888c;
+    --texto-opaco: #a69090;
 
     --cor-detalhes: #929292;
 
@@ -243,5 +243,36 @@ a {
     padding-left: 30px;
     padding-right: 30px;
 }
+ 
 
+/* Seções e Titúlo */
+section{
+    padding: 60px 0;
+    overflow: hidden;
+    /* clara */
+    background: #41281f;
+}
 
+.section-bg{
+    background: #57362b;
+    color: var(--texto-claro);
+
+}
+
+/* Classe H2 */
+.section-title{
+
+    padding-bottom: 30px;    
+}
+
+.section-title h2{
+    color: var(--texto-claro);
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::after{
+
+}
