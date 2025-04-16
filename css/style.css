@@ -233,6 +233,35 @@ a {
     letter-spacing: 2px;
     border-bottom: 3px solid #c7a80d ;
 }
+
+@media(min-width: 1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+@media(max-width: 1024px){
+   #hero{
+    background-attachment: fixed;
+   }
+}
+
+
+@media(max-width: 768px){
+    #hero h2{
+        font-size: 90px;
+        line-height: 75;
+        margin-bottom: 20px;
+    }
+    #hero p {
+        font-size: 28px;
+    }
+}
+
+
+
+
+
+
 /* estrutura base - corpo */
 
 #main {
@@ -274,5 +303,28 @@ section{
 }
 
 .section-title h2::after{
+    content: "";
+    position: absolute;
+    background: #7b5347;
+    width: 120px;
+    height: 6px;
+    display: block;
+    bottom: 0;
+    left: 0;
+}
 
+.section-title p{
+    margin-bottom: 0;
+}
+
+/* Sobre */
+.sobre .content h3{
+    color: #99744e;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.sobre .content ul{
+    list-style: none;
+    padding: 0;
 }
