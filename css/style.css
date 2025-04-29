@@ -4,7 +4,7 @@
 
     --background-color: rgba(5, 13, 24, 0.555);
 
-    --fundo-menu-lateral: #231811;
+    --fundo-menu-lateral: #201712;
     --fundo-claro: #a6afb4;
     --fundo-escuro: #2f2015;
 
@@ -279,7 +279,7 @@ section{
     padding: 60px 0;
     overflow: hidden;
     /* clara */
-    background: #41281f;
+    background: #3f261c;
 }
 
 .section-bg{
@@ -350,3 +350,38 @@ section{
     font-size: 16px;
 }
 
+.conquistas .count-box{
+    padding: 30px;
+    width: 100%;
+}
+
+.conquistas .count-box i{
+    color: #99744e;
+    font-size: 44px;
+    display: block;
+    float: left;
+    /* line-height: ; */
+}
+
+.conquistas .count-box span{
+    font-size: 48px;
+    color: #99744e;
+    display: block;
+    line-height: 40px;
+    font-weight: 700;
+    margin-left: 60px;
+}
+
+.conquistas .count-box p{
+    padding: 15px 0 0 0 ;
+    margin: 0 0 0 60px;
+    color: #cdcdcd;
+}
+
+.conquistas .count-box strong{
+    font-weight: 800;
+}
+.conquistas .count-box i:hover, .conquistas .count-box span:hover{
+    color: var(--fundo-claro);
+    transition: ease-in-out .5s;
+}
