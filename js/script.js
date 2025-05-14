@@ -19,7 +19,6 @@
    * Função de Adição de Eventos (on)
    * Função espera que um evento ocorra e depois responde a ele  */
 
-
   const on = (type, el, listener, all = false) => {
       let selectEl = select(el, all)
       if (selectEl) {
@@ -38,6 +37,7 @@
       this.classList.toggle('bi-list')
       this.classList.toggle('bi-x')
   })
+
 
   // Efeito Digitação
   const typed = select('.typed')
@@ -77,6 +77,21 @@
     }
 
 
+
+
+    /* Isotope - Biblioteca para Filtro */
+    window.addEventListener( 'load', () => {
+        let portfolioContainer = select(".portfolio-container");
+        if (portfolioContainer){
+            let portfolioIsotope = new Isotope(portfolioContainer,{
+                itemsSelector: '.portfolio-item'
+            });
+
+            let portfolioFilters = select('#portfolio-filters li' , true);
+        }
+
+
+    });
 
 
 
